@@ -1,0 +1,14 @@
+<!-- homepage.html -->
+2<!doctype html>
+3<html lang="en">
+4<head>
+5    <title>Online Books For You</title>
+6</head>
+7<body>
+8    <h1>Mystery books you may like</h1>
+9    <ul>
+10    {% for book in recommendations %}
+11        <li>{{ book.title }}</li>
+12    {% endfor %}
+13    </ul>
+14</body>
